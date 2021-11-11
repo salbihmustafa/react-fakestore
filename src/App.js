@@ -3,10 +3,12 @@ import './App.css'
 
 const App = () => {
   return (
-    <div className="content">
-        <div className="flex-container">
+    <div className="container">
+        <header></header>
+        <div className="content">
         
         </div>
+        <footer></footer>
     </div>
   )
 }

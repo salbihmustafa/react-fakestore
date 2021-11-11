@@ -1,24 +1,26 @@
-*{
-    font-family: verdana;
-    margin: 0;
-    padding: 0;
-}
 html,body{
-    height: 100%;
+    margin: 0;
     background: #fafafa;
+    overflow: hidden;
 }
-body{
+
+.container{
+    border: 1px solid red;
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
 }
 
-.content{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    flex: 1 0 auto;
+header, footer{
+    height: 100px;
 }
-.flex-container{
-    border: 1px solid green;
-    margin: 20px 0;
+header{
+    background-color: blue;
+}
+.content{
+    flex: 1;
+}
+footer{
+    background-color: green;
 }
