@@ -4,7 +4,7 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <div className="navbar-wrapper">
-      <div class="ui secondary  menu">
+      <div className="ui secondary  menu">
         <a className="item active" href="#">
           Home
         </a>
@@ -16,12 +16,12 @@ const NavBar = () => {
         </a>
         <div className="right menu">
           <div className="item">
-            <div class="ui icon input">
+            <div className="ui icon input">
               <input type="text" placeholder="Search..." />
-              <i class="search link icon"></i>
+              <i className="search link icon"></i>
             </div>
           </div>
-          <a class="ui item">Logout</a>
+          <a className="ui item">Logout</a>
         </div>
       </div>
     </div>

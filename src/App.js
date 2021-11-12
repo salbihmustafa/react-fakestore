@@ -1,19 +1,20 @@
 import React from "react";
 import "./App.css";
 import NavBar from "./components/UI/NavBar";
+import ProductSection from "./components/Products/ProductList";
 
 const App = () => {
   return (
     <div className="container">
       <header>
-        <div class="header-name">Header</div>
+        <div className="header-name">Header</div>
         <div>Height: 100px, Width: 100%</div>
         <NavBar />
       </header>
-      <section>Test</section>
+      <ProductSection />
       <main></main>
       <footer>
-        <div class="footer-name">Footer</div>
+        <div className="footer-name">Footer</div>
         <div>Height: 100px, Width: 100%</div>
       </footer>
     </div>

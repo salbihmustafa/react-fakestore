@@ -1,0 +1,25 @@
+.card-wrapper{
+  flex: 0 0 150px;
+  height: 100%;
+  border: 1px solid green;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+img{
+  /* width: 100%;
+  max-height: 100px; */
+}
+.image-section{
+  flex: 1 1 100px;
+  border: 1px solid yellow;
+}
+.section2{
+  flex: 0;
+  border: 1px solid blue;
+}
+.section3{
+  flex: 0;
+  border: 1px solid orange;
+}
