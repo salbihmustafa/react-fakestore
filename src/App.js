@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import NavBar from "./components/UI/NavBar";
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
       <header>
         <div class="header-name">Header</div>
         <div>Height: 100px, Width: 100%</div>
+        <NavBar />
       </header>
       <section></section>
       <main></main>

@@ -7,6 +7,7 @@ html,body{
 .container{
     /* border: 1px solid red; */
     height: 100vh;
+    max-width: none;
 
     display: flex;
     flex-direction: column;
