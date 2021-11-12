@@ -5,7 +5,7 @@ html,body{
 }
 
 .container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100vh;
 
     display: flex;
@@ -14,13 +14,31 @@ html,body{
 
 header, footer{
     height: 100px;
+    color: #5F5C6D;
+
+    display: flex;
+    align-items: center;
 }
 header{
-    background-color: blue;
+    background-color: #DEDBEE;
 }
-.content{
+header div{
     flex: 1;
 }
+header .header-name{
+    margin-left: 50px;
+}
+
+main{
+    flex: 1;
+}
+
 footer{
-    background-color: green;
+    background-color: #DEDBEE;
+}
+footer div{
+    flex: 1;
+}
+footer .footer-name{
+    margin-left: 50px;
 }
