@@ -10,7 +10,7 @@ const App = () => {
         <div>Height: 100px, Width: 100%</div>
         <NavBar />
       </header>
-      <section></section>
+      <section>Test</section>
       <main></main>
       <footer>
         <div class="footer-name">Footer</div>
