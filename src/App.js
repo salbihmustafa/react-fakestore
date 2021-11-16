@@ -7,8 +7,12 @@ const App = () => {
   return (
     <div className="container">
       <header>
-        <div className="header-name">Header</div>
-        <div>Height: 100px, Width: 100%</div>
+        <div>
+          <a className="header-name" href="#">
+            Uncharted Ventures
+          </a>
+        </div>
+
         <NavBar />
       </header>
       <ProductSection />

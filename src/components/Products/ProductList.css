@@ -1,11 +1,6 @@
-.card-container{
+.ui.four.cards{
     margin: 10px 10px;
     height: 100%;
     border: 1px solid red;
-
-    display: flex;
-    justify-content: center;
-    flex-flow: row;
-    flex-wrap: wrap;
     overflow-y: auto;
 }

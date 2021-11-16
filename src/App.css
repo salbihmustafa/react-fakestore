@@ -19,6 +19,7 @@ header, footer{
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 header{
     background-color: #DEDBEE;
@@ -28,6 +29,7 @@ header div{
 }
 header .header-name{
     margin-left: 50px;
+    color: black;
 }
 
 main{

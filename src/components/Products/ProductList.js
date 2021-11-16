@@ -34,7 +34,7 @@ const ProductSection = () => {
   });
 
   return (
-    <div className="card-container">
+    <div className="ui four cards">
       {displayProducts}
     </div>
   );

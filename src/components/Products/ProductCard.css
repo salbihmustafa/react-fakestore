@@ -1,8 +1,5 @@
-.card-wrapper{
-  flex: 0 0 150px;
-  height: 50%;
+.card{
   border: 1px solid green;
-
 
   display: flex;
   flex-direction: column;
