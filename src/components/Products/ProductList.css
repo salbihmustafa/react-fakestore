@@ -1,6 +1,9 @@
-.ui.four.cards{
+.card-container{
     margin: 10px 10px;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     overflow-y: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }

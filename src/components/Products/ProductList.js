@@ -11,33 +11,36 @@ const ProductSection = () => {
     const source = axios.CancelToken.source();
 
     const fetchData = async () => {
-      try{
+      try {
         const response = await FakeStoreApi.get("/products");
-        console.log(response.data)
+        console.log(response.data);
         setProducts(response.data);
-      }catch(err){
+      } catch (err) {
         console.log("error", err);
       }
-      
-      
-    }
+    };
     fetchData();
     return () => {
       source.cancel(); //this will prevent memory leaking
       console.log("Clean up");
-    }
-    
+    };
   }, []);
-  
-  const displayProducts = products.map(({id, image}) => {
-    return <ProductCard key={id} image={image}/>;
-  });
 
-  return (
-    <div className="ui four cards">
-      {displayProducts}
-    </div>
+  const displayProducts = products.map(
+    ({ id, image, title, price, rating }) => {
+      return (
+        <ProductCard
+          key={id}
+          image={image}
+          title={title}
+          price={price}
+          rating={rating}
+        />
+      );
+    }
   );
+
+  return <div className="card-container">{displayProducts}</div>;
 };
 
 export default ProductSection;

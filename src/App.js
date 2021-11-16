@@ -18,8 +18,7 @@ const App = () => {
       <ProductSection />
       <main></main>
       <footer>
-        <div className="footer-name">Footer</div>
-        <div>Height: 100px, Width: 100%</div>
+        <div>©2021 Uncharted Ventures. All Rights Reserved.</div>
       </footer>
     </div>
   );

@@ -4,25 +4,14 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <div className="navbar-wrapper">
-      <div className="ui secondary  menu">
-        <a className="item active" href="#">
-          Home
-        </a>
-        <a className="item" href="#">
-          About
-        </a>
-        <a className="item" href="#">
-          List
-        </a>
-        <div className="right menu">
-          <div className="item">
-            <div className="ui icon input">
-              <input type="text" placeholder="Search..." />
-              <i className="search link icon"></i>
-            </div>
-          </div>
-          <a className="ui item">Logout</a>
-        </div>
+      <div className="ui icon input">
+        <input type="text" placeholder="Search..." />
+        <i className="search icon"></i>
+      </div>
+      <div className="menu-btns">
+        <div><a href="#">User</a></div>
+        <div><a href="#">Link</a></div>
+        <div><a href="#"><i className="material-icons">shopping_cart</i></a></div>
       </div>
     </div>
   );
