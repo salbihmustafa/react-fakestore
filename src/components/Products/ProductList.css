@@ -1,9 +1,13 @@
-.card-container{
+.product-list-wrapper{
     margin: 10px 10px;
     height: 100%;
     /* border: 1px solid red; */
     overflow-y: auto;
-
+}
+.product-header{
+    margin: 10px 10px;
+}
+.product-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }

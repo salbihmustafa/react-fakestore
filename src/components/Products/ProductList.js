@@ -40,7 +40,12 @@ const ProductSection = () => {
     }
   );
 
-  return <div className="card-container">{displayProducts}</div>;
+  return (
+    <div className="product-list-wrapper">
+      <h1 className="product-header">Inventory</h1>
+      <div className="product-container">{displayProducts}</div>
+    </div>
+  );
 };
 
 export default ProductSection;

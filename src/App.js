@@ -11,12 +11,14 @@ const App = () => {
           <a className="header-name" href="#">
             Uncharted Ventures
           </a>
+          <div className="ui icon input">
+            <input type="text" placeholder="Search..." />
+            <i className="search icon"></i>
+          </div>
         </div>
-
         <NavBar />
       </header>
       <ProductSection />
-      <main></main>
       <footer>
         <div>©2021 Uncharted Ventures. All Rights Reserved.</div>
       </footer>
