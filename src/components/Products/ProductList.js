@@ -42,8 +42,8 @@ const ProductSection = () => {
 
   return (
     <div className="product-list-wrapper">
-      <h1 className="product-header">Inventory</h1>
-      <div className="product-container">{displayProducts}</div>
+      <h2 className="product-header">Inventory</h2>
+      <div className="product-container">{/*displayProducts*/}</div>
     </div>
   );
 };

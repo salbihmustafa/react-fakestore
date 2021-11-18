@@ -1,13 +1,18 @@
 .product-list-wrapper{
-    margin: 10px 10px;
     height: 100%;
-    /* border: 1px solid red; */
     overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
 }
 .product-header{
-    margin: 10px 10px;
+    flex: 1;
 }
 .product-container{
+    flex: 15;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    border: 1px solid yellow;
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
 }

@@ -18,7 +18,14 @@ const App = () => {
         </div>
         <NavBar />
       </header>
-      <ProductSection />
+      <main>
+        <div className="main-container">
+          <aside>Options</aside>
+          <section>
+            <ProductSection />
+          </section>
+        </div>
+      </main>
       <footer>
         <div>©2021 Uncharted Ventures. All Rights Reserved.</div>
       </footer>
