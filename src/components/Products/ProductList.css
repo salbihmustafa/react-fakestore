@@ -6,13 +6,17 @@
 }
 .product-header{
     flex: 1;
+    margin-left: 10px;
 }
-.product-container{
-    overflow: auto;
-    padding: 10px;
-    flex: 30;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(200px, auto);
-    grid-gap: 10px;
+
+@media screen and (min-width: 760px){
+    .product-container{
+        overflow: auto;
+        flex: 30;
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 10px;
+    }
 }

@@ -1,5 +1,5 @@
 :root{
-    --background: #FAFAFA;
+    --background: whitesmoke;
     --primary: #00C6CF;
     --secondary: #E1FFFA;
     --text: #a7a6a6;
@@ -8,12 +8,14 @@
 html,body{
     margin: 0;
     background: var(--background);
-    overflow: hidden;
+}
+body{
+    overflow: auto;
 }
 
 .container{
     /* border: 1px solid red; */
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -22,11 +24,11 @@ html,body{
 header{
     height: 75px;
     border: 1px solid var(--text);
-
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #FAFAFA;
+    background-color: var(--background);
 }
 header div{
     flex: 1;
@@ -36,35 +38,40 @@ header .header-name{
     margin-right: 20px;
 }
 
-main{
-    flex: 1;
-    /* border: 1px solid green; */
-}
-
-.main-container{
-    /* border: 1px solid blue; */
-    height: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 10px;
-    grid-template-areas:
-    "main-aside main-sec main-sec main-sec"
-    "main-aside main-sec main-sec main-sec"
-    "main-aside main-sec main-sec main-sec"
-    "main-aside main-sec main-sec main-sec";
-}
-
-main aside{
-    border-right: 1px solid var(--text);
-
-    grid-area: main-aside;
-}
-main section{
-    grid-area: main-sec;
+@media screen and (min-width: 760px){
+    main{
+        flex: 1;
+        border: 1px solid green;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    
+    .main-container{
+        /* border: 1px solid blue; */
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        border: 1px solid red;
+    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 10px;
+        grid-template-areas:
+        "main-aside main-sec main-sec main-sec"
+        "main-aside main-sec main-sec main-sec"
+        "main-aside main-sec main-sec main-sec"
+        "main-aside main-sec main-sec main-sec";
+    }
+    
+    main aside{
+        border-right: 1px solid var(--text);
+        grid-area: main-aside;
+    }
+    main section{
+        grid-area: main-sec;
+    }
 }
 
 footer{
@@ -76,7 +83,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #FAFAFA;
+    background-color: var(--background);
     
 }
 footer div{

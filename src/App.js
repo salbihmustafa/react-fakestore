@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import NavBar from "./components/UI/NavBar";
-import ProductSection from "./components/Products/ProductList";
+import ProductList from "./components/Products/ProductList";
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
         <div className="main-container">
           <aside>Options</aside>
           <section>
-            <ProductSection />
+            <ProductList />
           </section>
         </div>
       </main>
