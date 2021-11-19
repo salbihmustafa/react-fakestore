@@ -1,40 +1,52 @@
-.card-container{
-  border: 1px solid var(--text);
-  
-}
-
-
-.card{
-  border: 1px solid var(--text);
+.product-card{
+  border: 1px solid #eee;
   background: white;
   border-radius: 8px;
   box-shadow: 0 0 5px;
-  height: 150px;
-  
+
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
-.card div{
-  color: var(--text);
-}
-.image-section{
-  flex: 1 1 100px;
+
+.image-sec{
+  flex: 1;
+  border: 1px solid green;
 
   display: flex;
   justify-content: center;
 }
+
+.title-sec{
+  border: 1px solid yellow;
+}
+
+.title-sec span{
+  display: block;
+  width: 150px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+
+.price-sec{
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-sec{
+  border: 1px solid red;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 .section2{
   flex: 0;
   margin: auto 5px;
   /* border: 1px solid blue; */
 }
-.section2 p{
-  width: 95%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+
 .section3{
   flex: 0;
   margin: auto 5px;

@@ -42,7 +42,7 @@ const ProductSection = () => {
 
   return (
     <div className="product-list-wrapper">
-      <h2 className="product-header">Inventory</h2>
+      <h2 className="product-page-header">Inventory</h2>
       <div className="product-container">{displayProducts}</div>
     </div>
   );
