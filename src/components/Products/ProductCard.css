@@ -3,6 +3,7 @@
   background: white;
   border-radius: 8px;
   box-shadow: 0 0 5px;
+  cursor: pointer;
 
   display: flex;
   flex-direction: column;
@@ -10,14 +11,14 @@
 
 .image-sec{
   flex: 1;
-  border: 1px solid green;
+  border-bottom: 1px solid var(--text);
 
   display: flex;
   justify-content: center;
 }
 
 .title-sec{
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
 .title-sec span{
@@ -29,13 +30,14 @@
 }
 
 .price-sec{
-  border: 1px solid blue;
+  border-bottom: 1px solid var(--text);
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 
 .btn-sec{
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   display: flex;
   justify-content: space-between;
