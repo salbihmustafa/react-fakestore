@@ -1,5 +1,6 @@
-import React from "react";
 import "./App.css";
+import React from "react";
+import Search from "./components/SearchBar/Search";
 import NavBar from "./components/UI/NavBar";
 import ProductList from "./components/Products/ProductList";
 
@@ -11,10 +12,7 @@ const App = () => {
           <a className="header-name" href="#">
             Uncharted Ventures
           </a>
-          <div className="ui icon input">
-            <input type="text" placeholder="Search..." />
-            <i className="search icon"></i>
-          </div>
+          <Search />
         </div>
         <NavBar />
       </header>
