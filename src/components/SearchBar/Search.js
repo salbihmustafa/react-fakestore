@@ -1,21 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-const Search = () => {
+const Search = (props) => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const searchHandler = (e) => {
-      setSearchTerm(e.target.value);
+  const onFormSubmit = (event) => {
+    event.preventDefault();
+
+    props.onSearchSubmit(searchTerm); //move searchTerm to App.js
   }
 
-  useEffect(() => {
-    console.log(searchTerm);
-  }, [searchTerm])
-
   return (
-    <div className="ui icon input">
-      <input type="text" placeholder="Search..." value={searchTerm} onChange={searchHandler}/>
-      <i className="search icon"></i>
-    </div>
+    <React.Fragment>
+      <form className="ui form" onSubmit={onFormSubmit}>
+        <div className="ui icon input">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <i className="search icon"></i>
+        </div>
+      </form>
+    </React.Fragment>
   );
 };
 

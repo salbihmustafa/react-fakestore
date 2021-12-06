@@ -55,6 +55,11 @@ header .header-name{
     margin-right: 20px;
 }
 
+.left-head {
+    display: flex;
+    align-items: center;
+}
+
 nav{
     grid-area: nav;
     border: 1px solid var(--text);
